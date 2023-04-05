@@ -5,10 +5,13 @@
 /.pnp
 .pnp.js
 
-/src/utils/Firabase
-./src/utils/Firabase
-/src/utils/Firabase
-./src/utils/Firabase
+.env
+/env
+
+/src/utils/Firabase/*.js
+./src/utils/Firabase/*.js
+/src/utils/Firabase/*.js
+./src/utils/Firabase/*.js
 
 # testing
 /coverage
