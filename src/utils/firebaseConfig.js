@@ -7,14 +7,14 @@ import {
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBFGJRkS0dNDOSYjj0ZtTAh4-TbIsQFesI",
-  authDomain: "klimty-93d1f.firebaseapp.com",
-  projectId: "klimty-93d1f",
-  storageBucket: "klimty-93d1f.appspot.com",
-  messagingSenderId: "197007393503",
-  appId: "1:197007393503:web:1053a978d8ce2717e7df6a",
-  measurementId: "G-64473D3Q3W",
+  apiKey: "AIzaSyDCQt7ohk_qF2seIljN3BpDy35Bb7-JeD0",
+  authDomain: "klimty-8469b.firebaseapp.com",
+  projectId: "klimty-8469b",
+  storageBucket: "klimty-8469b.appspot.com",
+  messagingSenderId: "111758548194",
+  appId: "1:111758548194:web:44a175a7d8fdedfa91d2bb"
 };
+
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
