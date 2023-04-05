@@ -5,7 +5,10 @@
 /.pnp
 .pnp.js
 
+/src/utils/firabaseConfig
+./src/utils/firabaseConfig
 /src/utils/firabaseConfig.js
+./src/utils/firabaseConfig.js
 
 # testing
 /coverage
