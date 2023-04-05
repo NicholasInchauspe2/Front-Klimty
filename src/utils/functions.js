@@ -7,7 +7,7 @@ import {
   onAuthStateChanged,
   sendPasswordResetEmail,
 } from "firebase/auth";
-import { providerGoogle, providerFacebook, storage } from "./firebaseConfig";
+import { providerGoogle, providerFacebook, storage } from "./Firebase/firebaseConfig";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
