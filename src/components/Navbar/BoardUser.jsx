@@ -43,6 +43,7 @@ export const BoardUser = () => {
     );
   };
 
+  console.log(name)
   useEffect(() => {
     axios.get(`http://localhost:3001/api/user/${userId}`)
     .then((data) => setIsAdmin(data.data.isAdmin))
@@ -50,7 +51,8 @@ export const BoardUser = () => {
       dispath(setPhoto(user.photoURL))
       if (user.providerData[0].providerId === "password") {
         axios.get(`http://localhost:3001/api/user/${userId}`).then((data) => {
-          setName(data.data.fullName);
+          console.log("DATA ",data)
+          setName(data.data.name);
         });
       
       } else if (user.providerData[0].providerId === "google.com") {
@@ -70,7 +72,7 @@ export const BoardUser = () => {
           sx={{ p: 0 }}
         >
           <Avatar alt={`${name}`} src={`${photo}`} />
-          <Typography sx={{ ml: 2 }}>{`${name?.split(" ")[0]}`}</Typography>
+          <Typography sx={{ ml: 2 }}>{`${name? (name) : ("LOGUEADO") }`}</Typography>
         </IconButton>
       </Tooltip>
       <Menu
